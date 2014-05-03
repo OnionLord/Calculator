@@ -14,8 +14,11 @@
 @interface CalculatorViewController : UIViewController
 {
     IBOutlet UILabel *display;
+    IBOutlet UILabel *storeDisplay;
     CalculatorBrain *brain;
     BOOL userIsInTeMiddleOfTypingANumber;
+    BOOL dotInputed;
+    IBOutlet UISegmentedControl *selectRadDeg;
 }
 
 -(IBAction)digitPressed:(UIButton *)sender;

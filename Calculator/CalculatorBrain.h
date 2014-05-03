@@ -12,9 +12,14 @@
     double operand;
     NSString *waitingOperation;
     double waitingOperand;
+    double storedValue;
+    NSInteger algeMode;
 }
 
+-(void)setStore:(double)anStoredValue;
+-(double)getStore;
 -(void)setOperand:(double)anOperand;
 -(double)performOperation:(NSString *)Operation;
+-(void)setAlgeMode:(NSInteger)anAlgeMode;
 
 @end
